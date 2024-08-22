@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagemenet.Infrastructu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagemenet.Domain", "GymManagemenet.Domain\GymManagemenet.Domain.csproj", "{45DDB09F-F0C7-4F56-8911-E41BF1051533}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Contracts", "GymManagement.Contracts\GymManagement.Contracts.csproj", "{96F63EAF-5C26-451A-A129-1A92E7B4AFDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +38,9 @@ Global
 		{45DDB09F-F0C7-4F56-8911-E41BF1051533}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45DDB09F-F0C7-4F56-8911-E41BF1051533}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45DDB09F-F0C7-4F56-8911-E41BF1051533}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96F63EAF-5C26-451A-A129-1A92E7B4AFDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96F63EAF-5C26-451A-A129-1A92E7B4AFDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96F63EAF-5C26-451A-A129-1A92E7B4AFDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96F63EAF-5C26-451A-A129-1A92E7B4AFDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
