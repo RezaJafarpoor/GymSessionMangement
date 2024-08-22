@@ -1,7 +1,7 @@
 @GymManagement.Api_HostAddress = http://localhost:5252
 @AdminId=..
 
-GET {{GymManagement.Api_HostAddress}}/Subscriptions/
+POST {{GymManagement.Api_HostAddress}}/api/Subscriptions/
 Content-Type: application/json
 
 {
