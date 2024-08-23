@@ -5,11 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Api", "GymManagement.Api\GymManagement.Api.csproj", "{DA86AC07-BACE-424F-8139-3A90463B8003}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagemenet.Application", "GymManagemenet.Application\GymManagemenet.Application.csproj", "{620F0363-B50D-48E1-BD73-BD91CAF88E32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Application", "GymManagement.Application\GymManagement.Application.csproj", "{620F0363-B50D-48E1-BD73-BD91CAF88E32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagemenet.Infrastructure", "GymManagemenet.Infrastructure\GymManagemenet.Infrastructure.csproj", "{1C517DFF-3997-4B7B-B340-9A41BF76388D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Infrastructure", "GymManagement.Infrastructure\GymManagement.Infrastructure.csproj", "{1C517DFF-3997-4B7B-B340-9A41BF76388D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagemenet.Domain", "GymManagemenet.Domain\GymManagemenet.Domain.csproj", "{45DDB09F-F0C7-4F56-8911-E41BF1051533}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Domain", "GymManagement.Domain\GymManagement.Domain.csproj", "{45DDB09F-F0C7-4F56-8911-E41BF1051533}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Contracts", "GymManagement.Contracts\GymManagement.Contracts.csproj", "{96F63EAF-5C26-451A-A129-1A92E7B4AFDE}"
 EndProject
