@@ -1,19 +1,20 @@
-﻿using GymManagement.Application.Services;
+﻿using GymManagement.Application.Subscriptions.Commands;
 using GymManagement.Contracts.Subscription;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GymManagement.Api.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]
-public class SubscriptionsController(ISubscriptionService subscriptionService) : ControllerBase
+public class SubscriptionsController(ISender sender) : ControllerBase
 {
-    private readonly ISubscriptionService _subscriptionService = subscriptionService;
-
     [HttpPost]
-    public IActionResult CreateSubscription(CreateSubscriptionRequest request)
+    public async Task<IActionResult> CreateSubscription(CreateSubscriptionRequest request)
     {
-        var subscriptionId = subscriptionService.CreateSubscription(request.SubscriptionType.ToString(), request.AdminId);
+        var command = new CreateSubscriptionCommand(request.SubscriptionType.ToString(), request.AdminId);
+        var subscriptionId = await sender.Send(command);
+        
         var response = new SubscriptionResponse(subscriptionId, request.SubscriptionType);
         
         return Ok(response);
