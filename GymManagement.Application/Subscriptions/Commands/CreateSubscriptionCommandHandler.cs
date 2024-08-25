@@ -4,13 +4,14 @@ using MediatR;
 
 namespace GymManagement.Application.Subscriptions.Commands;
 
-public class CreateSubscriptionCommandHandler(ISubscriptionsRepository _subscriptionsRepository ) : IRequestHandler<CreateSubscriptionCommand, Subscription>
+public class CreateSubscriptionCommandHandler(ISubscriptionsRepository subscriptionsRepository,
+    IUnitOfWork unitOfWork) : IRequestHandler<CreateSubscriptionCommand, Subscription>
 {
     public async Task<Subscription> Handle(CreateSubscriptionCommand request, CancellationToken cancellationToken)
     {
         var sub = new Subscription();
         sub.Id = Guid.NewGuid();
-        _subscriptionsRepository.AddSubscription(sub);
+        await subscriptionsRepository.AddSubscriptionAsync(sub);
         return sub;
     }
 }
