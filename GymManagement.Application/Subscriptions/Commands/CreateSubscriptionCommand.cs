@@ -1,9 +1,10 @@
-﻿using MediatR;
+﻿using GymManagement.Domain.Subscriptions;
+using MediatR;
 using System.Windows.Input;
 
 namespace GymManagement.Application.Subscriptions.Commands;
 
-public record CreateSubscriptionCommand(string SubscriptionType, Guid AdminId) : IRequest<Guid>
+public record CreateSubscriptionCommand(string SubscriptionType, Guid AdminId) : IRequest<Subscription>
 {
     
 }

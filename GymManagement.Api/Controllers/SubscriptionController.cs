@@ -13,9 +13,9 @@ public class SubscriptionsController(ISender sender) : ControllerBase
     public async Task<IActionResult> CreateSubscription(CreateSubscriptionRequest request)
     {
         var command = new CreateSubscriptionCommand(request.SubscriptionType.ToString(), request.AdminId);
-        var subscriptionId = await sender.Send(command);
+        var subscription = await sender.Send(command);
         
-        var response = new SubscriptionResponse(subscriptionId, request.SubscriptionType);
+        var response = new SubscriptionResponse(subscription.Id, request.SubscriptionType);
         
         return Ok(response);
     }
